@@ -121,5 +121,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 CART_SESSION_ID = 'cart'
 
-PAYPAL_RECEIVER_EMAIL="synergisticit668@gmail.com"
+PAYPAL_RECEIVER_EMAIL=""
 PAYPAL_TEST=True
