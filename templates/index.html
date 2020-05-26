@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Index</title>
+</head>
+<body>
+<marquee width="100%" direction="left" height="100px">
+    <h3>Shop here</h3>
+</marquee>
+
+<table class="table" border="1">
+    <thead>
+    <tr><th>Name</th><th>Price</th><th>Image</th></tr>
+     </thead>
+    <tbody>
+    {% for item in product %}
+    <tr><td> {{item.name}}</td><td> {{item.price}}</td><td><img src="{% if item.image %}{{ item.image.url }}{% else %}Sorry no image{% endif %}"></td></tr>
+
+
+
+
+    {% endfor %}
+     {{ form.render }}
+    </tbody>
+    </table>
+</body>
+</html>
